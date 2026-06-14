@@ -1,0 +1,8 @@
+
+💰*New Winner!* 💰
+
+Tokens: {{amount}}
+
+Holder: `{{holder}}`
+
+[View transaction]({{txSignatureLink}})

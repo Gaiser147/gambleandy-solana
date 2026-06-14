@@ -1,0 +1,16 @@
+# GANDY lottery — installed crontab (reference copy).
+# Mirrors the live `crontab -l`. Jobs are wrapped with `cronitor exec` for
+# heartbeat monitoring (https://cronitor.io). The monitor IDs are per-account.
+#
+# m h  dom mon dow  command
+#
+# Every 2 hours: run the full lottery draw
+#   gettokenholders.js -> randomHolder.js -> WinnerPayout2.js
+#   -> telegram_winnNotify.js -> sync_google-sheets.js
+0 */2 * * * cronitor exec IMOIpD /root/new-token/scripts/lottery/cron-test.sh
+
+# Every 10 minutes: withdraw withheld Token-22 transfer fees
+*/10 * * * * cronitor exec sWBG31 /root/new-token/scripts/lottery/cron_fetch_fees.sh
+
+# Every minute: refresh the latest-winner signature (getlatestwinner.js)
+*/1 * * * * cronitor exec 2sPpTj /root/new-token/scripts/lottery/cron_latestwinner.sh
