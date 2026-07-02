@@ -4,6 +4,7 @@ Gambleandy (GANDY) is a Solana Token 2022 token with a built in lottery. Every t
 
 ![Gambleandy Logo](https://raw.githubusercontent.com/Gaiser147/gambleandy/refs/heads/main/gandy_logo.png)
 [Website](gambleandy.com) (offline since January 2026)
+Token: `pee1EpdW1XtxtmMHcLDrz2zfj8rCUHzzbUv7KNdu1jh`
 
 ## How it works
 
