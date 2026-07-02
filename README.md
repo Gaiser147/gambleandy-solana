@@ -15,6 +15,7 @@ A set of small Node.js scripts runs on a schedule (cron) and passes state throug
 5. `sync_google-sheets.js` mirrors the payout history to a Google Sheet
 
 Separately, `fee.js` withdraws the withheld Token 2022 transfer fees on its own schedule, and `getlatestwinner.js` prints the latest winner transaction.
+![backend system visualization](https://raw.githubusercontent.com/Gaiser147/gambleandy-solana/refs/heads/main/gandy_aufbau.jpg)
 
 ## Repository layout
 
