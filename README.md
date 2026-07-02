@@ -1,7 +1,9 @@
 # Gambleandy Solana Lottery
 
 Gambleandy (GANDY) is a Solana Token 2022 token with a built in lottery. Every transfer pays a 10% transfer fee. The collected fees are periodically given to a random token holder through an automated draw.
+
 ![Gambleandy Logo](https://raw.githubusercontent.com/Gaiser147/gambleandy/refs/heads/main/gandy_logo.png)
+
 Website: gambleandy.com
 
 ## How it works
@@ -15,6 +17,7 @@ A set of small Node.js scripts runs on a schedule (cron) and passes state throug
 5. `sync_google-sheets.js` mirrors the payout history to a Google Sheet
 
 Separately, `fee.js` withdraws the withheld Token 2022 transfer fees on its own schedule, and `getlatestwinner.js` prints the latest winner transaction.
+
 ![backend system visualization](https://raw.githubusercontent.com/Gaiser147/gambleandy-solana/refs/heads/main/gandy_aufbau.jpg)
 
 ## Repository layout
